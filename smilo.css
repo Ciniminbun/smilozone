@@ -21,12 +21,13 @@ background-image: url('images/smilodon_illustration.png');
 height: 200px;
 background-repeat: repeat;
 background-size: auto 100%;
-margin-bottom: 40px;
--webkit-animation: bannermove 30s linear infinite;
--moz-animation: bannermove 30s linear infinite;
--ms-animation: bannermove 30s linear infinite;
--o-animation: bannermove 30s linear infinite;
-animation: bannermove 30s linear infinite;
+margin-bottom: 1%;
+margin-top: 1%;
+-webkit-animation: bannermove 10s linear infinite;
+-moz-animation: bannermove 10s linear infinite;
+-ms-animation: bannermove 10s linear infinite;
+-o-animation: bannermove 10s linear infinite;
+animation: bannermove 10s linear infinite;
 }
  
 @keyframes "bannermove" {
@@ -99,12 +100,21 @@ width: 100%;
 }
 
 #navbar a {
+display: flex;
+font-size: 120%;
 float: left;
 display: block;
 color: #E4C784;
-text-align: center;
 padding: 14px;
 text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#navbar a img {
+padding-right: 10px;
+height: 30px;
 }
 
 #navbar a:hover {
@@ -145,14 +155,20 @@ text-align: center;
 
 footer {
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 overflow: hidden;
 background-color: #752E23;
 border-radius: 0 0 15px 15px;
-font-family: "Libre Franklin", Gadget, sans-serif;
 font-weight: 900;
+font-size: 70%;
 width: 100%;
+color: #E4C784;
+text-align: center;
+padding-top: 14px;
+text-decoration: none;
+font-style: italic;
 }
 
 footer a {
@@ -165,8 +181,7 @@ text-decoration: none;
 }
 
 footer a:hover {
-background-color: #A1995B;
-color: #201C26;
+color: #A1995B;
 }
 
 footer a:hover img {
@@ -175,4 +190,88 @@ filter: invert(100%) brightness(10%);
 
 footer a:active {
 color: #E4C784;
+}
+
+a {
+color: #828042;
+}
+
+a:hover {
+color: #931B25;
+}
+
+a:active {
+color: #A1995B;
+}
+
+@media only screen and (orientation: landscape) {
+#wrapper {
+width: 70%;
+}
+
+.photoscroll {
+background-image: url('images/smilodon_illustration.png');
+height: 200px;
+background-repeat: repeat;
+background-size: auto 100%;
+margin-bottom: 1%;
+margin-top: 1%;
+-webkit-animation: bannermove 30s linear infinite;
+-moz-animation: bannermove 30s linear infinite;
+-ms-animation: bannermove 30s linear infinite;
+-o-animation: bannermove 30s linear infinite;
+animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    background-position: 0;
+ }
+ 100% {
+    background-position: 100%;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+    background-position: 0;
+ }
+ 100% {
+    background-position: 100%;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+    background-position: 0;
+ }
+ 100% {
+    background-position: 100%;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+    background-position: 0;
+ }
+ 100% {
+    background-position: 100%;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+    background-position: 0;
+ }
+ 100% {
+    background-position: 100%;
+ }
+ 
+}
+
+
 }
