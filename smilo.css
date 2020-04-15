@@ -268,6 +268,10 @@ border-width: 0.6em;
 border-radius: 0.2em 1.1em 0.2em 1.1em;
 }
 
+.container div {
+margin-bottom: 7vw;
+}
+
 @media only screen and (orientation: landscape) {
 #wrapper {
 width: 65%;
@@ -357,6 +361,10 @@ display: grid;
 grid-template-rows: auto;
 grid-template-columns: auto;
 grid-row-gap: 30px;
+}
+
+.container div {
+margin-bottom: 0;
 }
 
 .grid0101 {
