@@ -11,7 +11,6 @@ src: url(fonts/Libre_Franklin/LibreFranklin-Regular.ttf);
 body {
 background-color: #201C26;
 color: #2A1014;
-overflow: hidden;
 font-family: Shanti, Helvetica, sans-serif;
 margin: auto;
 }
@@ -90,6 +89,7 @@ margin-top: 20px;
 width: 90%;
 display: flex;
 flex-direction: column;
+margin-bottom: 20px;
 }
 
 #navbar {
@@ -141,7 +141,18 @@ width: 100%;
 }
 
 main div {
-padding-left: 7%;
+padding-left: 3%;
+padding-right: 7%;
+}
+
+main div img {
+margin: auto;
+width: 100%;
+height: auto;
+border: solid;
+border-color: #2A1014;
+border-width: 10px;
+border-radius: 3px 15px 3px 15px;
 }
 
 h1 {
@@ -219,6 +230,16 @@ footer a:active {
 color: #E4C784;
 }
 
+#footimg {
+width: 80px;
+height: auto;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
 a {
 color: #828042;
 }
@@ -229,6 +250,24 @@ color: #931B25;
 
 a:active {
 color: #A1995B;
+}
+
+#desc {
+font-size: 10px;
+}
+
+#desc a {
+color: #2A1014;
+text-decoration: none;
+}
+
+#desc a:hover {
+color: #931B25;
+}
+
+iframe {
+width: 100%;
+height: 50vw;
 }
 
 @media only screen and (orientation: landscape) {
@@ -303,6 +342,76 @@ animation: bannermove 30s linear infinite;
 header img {
 width: 5vw;
 height: auto;
+}
+
+iframe {
+height: 20vw;
+}
+
+.container {
+display: grid;
+grid-template-rows: auto;
+grid-template-columns: auto;
+grid-row-gap: 30px;
+}
+
+.grid0101 {
+grid-row: 1 / 2;
+grid-column: 1 / 2;
+}
+
+.grid0102 {
+grid-row: 2 / 4;
+grid-column: 1 / 2;
+}
+
+.grid0104 {
+grid-row: 4 / 5;
+grid-column: 1 / 2;
+}
+
+.grid0105 {
+grid-row: 5 / 6;
+grid-column: 1 / 2;
+}
+
+.grid0106 {
+grid-row: 6 / 7;
+grid-column: 1 / 2;
+}
+
+.grid0201 {
+grid-row: 1 / 2;
+grid-column: 2 / 3;
+}
+
+.grid0202 {
+grid-row: 2 / 3;
+grid-column: 2 / 3;
+}
+
+.grid0203 {
+grid-row: 3 / 4;
+grid-column: 2 / 3;
+}
+
+.grid0204 {
+grid-row: 4 / 6;
+grid-column: 2 / 3;
+padding-top: 52px;
+}
+
+h1 {
+padding-top: 20px;
+padding-bottom: 8px;
+border-bottom: solid;
+border-width: 8px;
+border-color: #752E23;
+width: 300px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 40px;
 }
 
 }
