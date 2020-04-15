@@ -101,7 +101,7 @@ width: 100%;
 
 #navbar a {
 display: flex;
-font-size: 120%;
+font-size: 3.8vw;
 float: left;
 display: block;
 color: #E4C784;
@@ -194,7 +194,7 @@ align-items: center;
 overflow: hidden;
 background-color: #752E23;
 font-weight: 900;
-font-size: 70%;
+font-size: 1.6vw;
 width: 100%;
 color: #E4C784;
 text-align: center;
@@ -225,7 +225,7 @@ color: #E4C784;
 }
 
 #footimg {
-width: 5em;
+width: 20vw;
 height: auto;
 display: block;
 margin-left: auto;
