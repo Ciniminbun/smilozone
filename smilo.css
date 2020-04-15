@@ -20,8 +20,6 @@ background-image: url('images/smilo-banner.png');
 height: 20vh;
 background-repeat: repeat;
 background-size: auto 100%;
-margin-bottom: 1%;
-margin-top: 1%;
 -webkit-animation: bannermove 20s linear infinite;
 -moz-animation: bannermove 20s linear infinite;
 -ms-animation: bannermove 20s linear infinite;
@@ -30,7 +28,7 @@ animation: bannermove 20s linear infinite;
 border-top: solid;
 border-bottom: solid;
 border-color: #2A1014;
-border-width: 15px;
+border-width: 1em;
 }
  
 @keyframes "bannermove" {
@@ -85,11 +83,9 @@ border-width: 15px;
 
 #wrapper {
 margin: auto;
-margin-top: 20px;
-width: 90%;
+width: 100%;
 display: flex;
 flex-direction: column;
-margin-bottom: 20px;
 }
 
 #navbar {
@@ -98,7 +94,6 @@ justify-content: center;
 align-items: center;
 overflow: hidden;
 background-color: #752E23;
-border-radius: 15px 15px 0 0;
 font-family: "Libre Franklin", Gadget, sans-serif;
 font-weight: 900;
 width: 100%;
@@ -110,7 +105,7 @@ font-size: 120%;
 float: left;
 display: block;
 color: #E4C784;
-padding: 14px;
+padding: 0.7em;
 text-decoration: none;
 display: flex;
 justify-content: center;
@@ -118,8 +113,8 @@ align-items: center;
 }
 
 #navbar a img {
-padding-right: 10px;
-height: 30px;
+padding-right: 0.4em;
+height: 1.7em;
 }
 
 #navbar a:hover {
@@ -151,8 +146,8 @@ width: 100%;
 height: auto;
 border: solid;
 border-color: #2A1014;
-border-width: 10px;
-border-radius: 3px 15px 3px 15px;
+border-width: 0.6em;
+border-radius: 0.2em 1.1em 0.2em 1.1em;
 }
 
 h1 {
@@ -180,14 +175,14 @@ header img {
 display: flex;
 justify-content: center;
 margin: auto;
-padding: 10px 30px 10px;
+padding: 0.9em 2em 0.9em;
 background-color: #2A1014;
 width: 20vw;
 height: auto;
 border-style: solid;
-border-radius: 15px;
+border-radius: 1.1em;
 border-color: #752E23;
-border-width: 10px;
+border-width: 0.9em;
 color: #E4C784;
 }
 
@@ -198,13 +193,12 @@ justify-content: center;
 align-items: center;
 overflow: hidden;
 background-color: #752E23;
-border-radius: 0 0 15px 15px;
 font-weight: 900;
 font-size: 70%;
 width: 100%;
 color: #E4C784;
 text-align: center;
-padding-top: 14px;
+padding-top: 2em;
 text-decoration: none;
 font-style: italic;
 }
@@ -214,7 +208,7 @@ float: left;
 display: block;
 color: #E4C784;
 text-align: center;
-padding: 14px;
+padding: 0.95em;
 text-decoration: none;
 }
 
@@ -231,13 +225,13 @@ color: #E4C784;
 }
 
 #footimg {
-width: 80px;
+width: 5em;
 height: auto;
 display: block;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 20px;
-margin-top: 20px;
+margin-bottom: 2em;
+margin-top: 2em;
 }
 
 a {
@@ -253,7 +247,7 @@ color: #A1995B;
 }
 
 #desc {
-font-size: 10px;
+font-size: 0.7em;
 }
 
 #desc a {
@@ -273,6 +267,12 @@ height: 50vw;
 @media only screen and (orientation: landscape) {
 #wrapper {
 width: 65%;
+margin-bottom: 1em;
+margin-top: 1em;
+}
+
+#navbar {
+border-radius: 15px 15px 0 0;
 }
 
 .photoscroll {
@@ -402,7 +402,6 @@ padding-top: 52px;
 }
 
 h1 {
-padding-top: 20px;
 padding-bottom: 8px;
 border-bottom: solid;
 border-width: 8px;
@@ -412,6 +411,27 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 40px;
+margin-top: 20px;
+}
+
+#footimg {
+margin-bottom: 20px;
+margin-top: 50px;
+}
+
+footer {
+border-radius: 0 0 15px 15px;
+}
+
+header img {
+padding: 0.8em 1em 0.8em;
+width: 8em;
+height: auto;
+border-style: solid;
+border-radius: 1.1em;
+border-color: #752E23;
+border-width: 0.5em;
+color: #E4C784;
 }
 
 }
