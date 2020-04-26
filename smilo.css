@@ -10,6 +10,7 @@ src: url(fonts/Libre_Franklin/LibreFranklin-Regular.ttf);
 
 body {
 background-color: #201C26;
+background-image: linear-gradient(#201C26, #0a070d);
 color: #2A1014;
 font-family: Shanti, Helvetica, sans-serif;
 margin: auto;
@@ -285,13 +286,10 @@ margin: auto;
 width: 90%;
 }
 
-.gallery div {
-padding-bottom: 3vw;
-}
-
-.galmain div {
-padding-left: 0;
-padding-right: 0;
+.galcard {
+background-color: #FFFFFF;
+margin-bottom: 4vw;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .galmain div img {
@@ -304,7 +302,8 @@ border-radius: 0;
 .galdesc {
 width: 40vw;
 display: block;
-max-height: none;
+padding: 2vw;
+box-sizing: border-box;
 }
 
 .timeline {
@@ -350,6 +349,10 @@ margin-bottom: 0;
 border-bottom: solid;
 border-width: 1.5vw;
 width: 15vw;
+}
+
+.quickfix {
+display: none;
 }
 
 
@@ -498,10 +501,12 @@ padding-right: 7%;
 
 .floatl {
 float: left;
+padding-bottom: 0;
 }
 
 .floatr {
 float: right;
+padding-bottom: 0;
 }
 
 h1 {
@@ -557,17 +562,35 @@ padding-top: 7px;
 }
 
 .galmain div img {
-height: 160px;
-width: auto;
+height: auto;
+width: 250px;
+transition: 0.3s;
 }
 
+.galmain div img:hover {
+width: 300px;
+}
 
 .gallery div {
-padding-bottom: 20px;
+padding-bottom: 0;
 }
 
 .galdesc {
 width: 200px;
+display: block;
+padding: 10px;
+margin-bottom: 10px;
+box-sizing: border-box;
+}
+
+.galcard {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+margin-bottom: 20px;
+transition: 0.3s;
+}
+
+.galcard:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #desc {
@@ -594,12 +617,19 @@ margin-left: 30px;
 margin-right: 20px;
 grid-column: 1/2;
 grid-row: 1/2;
+z-index: 1;
 }
 
 .time-container {
 grid-template-columns: 60px auto;
 padding-top: 30px;
 width: 100%;
+transition: width 0.3s, font-size 0.3s;
+}
+
+.time-container:hover {
+width:120%;
+font-size: 1.2em;
 }
 
 .time-content {
@@ -610,6 +640,11 @@ border-radius: 15px;
 flex-grow: 20;
 grid-column: 2/3;
 grid-row: 1/2;
+transition: box-shadow 0.3s;
+}
+
+.time-content:hover {
+box-shadow: -6px 8px 3px #b78d47;
 }
 
 .timestart {
@@ -648,4 +683,9 @@ grid-column: 2 / 3;
 #wrapper {
 width: 60%;
 }
+
+.quickfix {
+display: inline;
+}
+
 }
